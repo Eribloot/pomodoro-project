@@ -41,11 +41,11 @@ function formatTime(totalTime) {
 function Pomodoro() {
   const [isTimerRunning, setIsTimerRunning] = useState(false);
 
-  const [IsTimerPaused , setIsTimerPaused] = useState(true);
+  const [, setIsTimerPaused] = useState(true);
 
   const [session, setSession] = useState(null);
 
-  const [takingBreak, setTakingBreak] = useState(false);
+  const [, setTakingBreak] = useState(false);
 
   const [focusDuration, setFocusDuration] = useState(25);
 
@@ -55,7 +55,7 @@ function Pomodoro() {
 
   const [elapsedTime, setElapsedTime] = useState(0);
 
-  const [timeRemaining, setTimeRemaining] = useState(focusDuration * 60);
+  const [, setTimeRemaining] = useState(focusDuration * 60);
 
   const [breakTimeRemaining, setBreakTimeRemaining] = useState(0);
 
